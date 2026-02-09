@@ -14,7 +14,7 @@ def aumentar_resolucao(caminho_entrada, caminho_saida):
     img_alta_res.save(caminho_saida, formato, quality=100, subsampling=0)
 
 def aumentar_todas_imagens(pasta_entrada, pasta_saida, progress_bar, percent_label):
-    arquivos = [f for f in os.listdir(pasta_entrada) if f.lower().endswith((".jpg", ".jpeg", ".png", ".webp", ".bmp", ".tiff"))]
+    arquivos = [f for f in os.listdir(pasta_entrada) if f.lower().endswith((".jpg", ".jpeg", ".png", ".WEBP", ".bmp", ".tiff"))]
     total = len(arquivos)
 
     if total == 0:
